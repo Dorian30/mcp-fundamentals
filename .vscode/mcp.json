@@ -1,0 +1,13 @@
+{
+	"servers": {
+		"epicshop": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@epic-web/workshop-mcp@latest"
+			]
+		}
+	},
+	"inputs": []
+}
