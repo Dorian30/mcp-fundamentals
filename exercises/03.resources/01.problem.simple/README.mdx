@@ -1,5 +1,7 @@
 # Resources
 
+<EpicVideo url="https://www.epicai.pro/workshops/day-1-2-mcp-fundamentals/resources~ah1hi" />
+
 👨‍💼 Our users really want to include their tags in the context as they write
 their journal entries. They could just ask the LLM to run the `list_tags` tool,
 but that's not as efficient. In fact, the host application they're using could
@@ -10,7 +12,7 @@ In this step, you'll take your first step toward exposing structured data from
 your server—not just as tool responses, but as first-class resources that
 clients can discover and read.
 
-Your goal:
+## Your challenge
 
 - Declare the `resources` capability on your server.
 - Register a simple resource called "tags" that provides information about all
@@ -21,7 +23,9 @@ This is your first taste of the MCP resources system. No need for dynamic
 templates or database integration yet—just get a static resource registered and
 returning a simple value.
 
-Here's an example of a resource:
+## An example
+
+Use this example as a reference to complete this challenge.
 
 ```ts
 agent.server.registerResource(

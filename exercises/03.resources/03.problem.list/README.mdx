@@ -1,5 +1,7 @@
 # Resource Templates List
 
+<EpicVideo url="https://www.epicai.pro/workshops/day-1-2-mcp-fundamentals/resource-templates-list~5v3h2" />
+
 👨‍💼 Our users want to be able to see a list of all tags. So let's implement the
 `list` callback for our resource templates.
 
@@ -16,6 +18,7 @@ agent.server.registerResource(
 				resources: names.map((name) => ({
 					name,
 					uri: `hello://${name}`,
+					// NOTE: this mimeType is whatever the client should expect if it retrieves the resource
 					mimeType: 'text/plain',
 					// note this does not include the contents of the resource
 				})),
